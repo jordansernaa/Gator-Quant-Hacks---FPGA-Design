@@ -1,0 +1,23 @@
+// Tang Nano 20K constraint template.
+// NOTE: Verify exact board pinout against official Sipeed/Gowin documentation before hardware programming.
+
+IO_LOC "clk_27m_i"    <PIN_CLK_27M_PLACEHOLDER>;
+IO_PORT "clk_27m_i"   IO_TYPE=LVCMOS33;
+
+IO_LOC "rst_n_i"      <PIN_RESET_PLACEHOLDER>;
+IO_PORT "rst_n_i"     IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+IO_LOC "uart_rx_i"    <PIN_UART_RX_PLACEHOLDER>;
+IO_PORT "uart_rx_i"   IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+IO_LOC "uart_tx_o"    <PIN_UART_TX_PLACEHOLDER>;
+IO_PORT "uart_tx_o"   IO_TYPE=LVCMOS33 DRIVE=8;
+
+IO_LOC "led_status_o[0]" <PIN_LED0_PLACEHOLDER>;
+IO_LOC "led_status_o[1]" <PIN_LED1_PLACEHOLDER>;
+IO_LOC "led_status_o[2]" <PIN_LED2_PLACEHOLDER>;
+IO_LOC "led_status_o[3]" <PIN_LED3_PLACEHOLDER>;
+IO_PORT "led_status_o[0]" IO_TYPE=LVCMOS33 DRIVE=8;
+IO_PORT "led_status_o[1]" IO_TYPE=LVCMOS33 DRIVE=8;
+IO_PORT "led_status_o[2]" IO_TYPE=LVCMOS33 DRIVE=8;
+IO_PORT "led_status_o[3]" IO_TYPE=LVCMOS33 DRIVE=8;
